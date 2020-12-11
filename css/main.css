@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+
+/*---------------------------------- animated heartbeat ----------------------------------------*/
+
+.computer {
+    animation: heartBeat 1.2s linear infinite;
+    -webkit-animation: heartBeat 1s linear infinite alternate-reverse;
+}
+
+.computer::before {
+    content: '💻';
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    33% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    66% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+}
+
+@-webkit-keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    33% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    66% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+}

@@ -1,0 +1,8 @@
+    div {
+        background-color: #1c1c1c, #8e8e8e=rgb(142, 142, 142), #f2eee5;
+        color: white, gainsboro, whitesmoke, blueviolet;
+        border: 2px solid blue, greenyellow, red, orange, whitesmoke, salmon;
+    }
+    /*------------------------------- DEBUGGING PURPOSE ONLY ---------------------------------*/
+    
+    🤣

@@ -1,0 +1,161 @@
+header {
+    height: 100%;
+    background-image: url('../img/h.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*------------------ .top-header 🖐 -----------------------------*/
+
+.top-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 3px solid red;
+}
+
+
+/*--.top-header button---*/
+
+.top-header button {
+    outline: 0;
+    border: none;
+    background: none;
+    color: coral;
+    font-weight: bold;
+    padding: 5px;
+    transition: transform 1s linear 0s;
+}
+
+.top-header button:hover {
+    outline: 0;
+    transform: scale(1.5, 1.5);
+}
+
+
+/*--.top-header a---*/
+
+.top-header a {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.top-header a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    background-color: rgb(142, 142, 142, 0.3);
+}
+
+
+/*-------------------- .logo  🤞  -------------------------*/
+
+.top-header .logo i {
+    font-size: 60px;
+}
+
+
+/*---------------- .menu-btn 🤞 --------------------------*/
+
+.top-header a.menu-btn {
+    display: none;
+    color: coral;
+    font-size: 30px;
+}
+
+
+/*------------------ .nav-bar 🤞 -----------------------*/
+
+.nav-bar {
+    border: 2px solid blue;
+    margin: 0;
+}
+
+
+/*------------- .dropdown 🖕 --------------*/
+
+li.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+li.dropdown .dropdown-btn {
+    font-size: 20px;
+}
+
+li.dropdown a::before {
+    content: '👉';
+}
+
+
+/*------ .dropdown-content -----*/
+
+li.dropdown .dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(242, 238, 229, 1);
+}
+
+li.dropdown:hover .dropdown-content.wide {
+    display: block;
+    animation: appear 0.3s linear 1;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.6;
+        margin-top: 5px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+li.dropdown:hover .dropdown-content.short {
+    max-height: fit-content;
+}
+
+
+/*-------------------------- @media query ------------------------*/
+
+@media screen and (max-width:425px) {
+    /*---- .top-header positioning -----------*/
+    .top-header {
+        justify-content: space-between;
+    }
+    .top-header a.menu-btn {
+        display: block;
+    }
+    .top-header .nav-bar {
+        display: none;
+        flex-basis: 100%;
+    }
+    li.dropdown {
+        display: block;
+    }
+    /*----- .dropdown-content ------------*/
+    li.dropdown .dropdown-content {
+        position: relative;
+        display: block;
+        max-height: 0;
+        width: 100%;
+        background: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .top-header {
+        width: 100%;
+    }
+}
