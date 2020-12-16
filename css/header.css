@@ -1,3 +1,8 @@
+/*** nesting style 🖐 ✋ 🖖 🤞 🖕 ☝ ****/
+
+
+/*-- 🖐 header -------------*/
+
 header {
     height: 100%;
     background-image: url('../img/h.jpg');
@@ -8,60 +13,36 @@ header {
 }
 
 
-/*------------------ .top-header 🖐 -----------------------------*/
+/*---- ✋ .indian-map --------*/
+
+.indian-map {
+    font-size: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: blue;
+}
+
+
+/*----- ✋ .top-header -------*/
 
 .top-header {
     width: 80%;
     margin: auto;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     padding: 5px;
     border: 3px solid red;
+    background-color: aqua;
 }
 
 
-/*--.top-header button---*/
-
-.top-header button {
-    outline: 0;
-    border: none;
-    background: none;
-    color: coral;
-    font-weight: bold;
-    padding: 5px;
-    transition: transform 1s linear 0s;
-}
-
-.top-header button:hover {
-    outline: 0;
-    transform: scale(1.5, 1.5);
-}
-
-
-/*--.top-header a---*/
-
-.top-header a {
-    display: block;
-    padding: 5px;
-    font-weight: bold;
-}
-
-.top-header a:hover {
-    color: blueviolet;
-    text-decoration: none;
-    background-color: rgb(142, 142, 142, 0.3);
-}
-
-
-/*-------------------- .logo  🤞  -------------------------*/
+/*--- .logo  🖖  --------------*/
 
 .top-header .logo i {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 
-/*---------------- .menu-btn 🤞 --------------------------*/
+/*----- .menu-btn 🖖 -----------*/
 
 .top-header a.menu-btn {
     display: none;
@@ -70,7 +51,36 @@ header {
 }
 
 
-/*------------------ .nav-bar 🤞 -----------------------*/
+/*--- .navigation-container 🖖 ---*/
+
+.navigation-container {
+    /*vvvip*/
+    flex-basis: 100%;
+    border: 2px solid darkslategrey;
+}
+
+
+/*--- .navigation 🤞 -------*/
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+}
+
+
+/*--- .top-bar 🖕 --------*/
+
+.top-bar {
+    border: 2px solid orange;
+}
+
+.top-bar .direct-links {
+    float: right;
+}
+
+
+/*----- .nav-bar 🖕 -------*/
 
 .nav-bar {
     border: 2px solid blue;
@@ -78,20 +88,49 @@ header {
 }
 
 
-/*------------- .dropdown 🖕 --------------*/
+/*-- .dropdown ☝ --------*/
 
 li.dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 25px;
 }
+
+
+/*--- .dropdown-btn ----*/
 
 li.dropdown .dropdown-btn {
+    outline: 0;
+    border: none;
+    background: none;
+    color: coral;
     font-size: 20px;
+    padding: 5px;
+    transition: transform 1s linear 0s;
 }
 
-li.dropdown a::before {
+li.dropdown .dropdown-btn:hover {
+    outline: 0;
+    transform: scale(1.5, 1.5);
+}
+
+
+/*--- .dropdown-content a ----*/
+
+li.dropdown .dropdown-content a {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+li.dropdown .dropdown-content a::before {
     content: '👉';
+}
+
+li.dropdown .dropdown-content a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    background-color: rgb(142, 142, 142, 0.3);
 }
 
 
@@ -124,6 +163,64 @@ li.dropdown:hover .dropdown-content.wide {
 
 li.dropdown:hover .dropdown-content.short {
     max-height: fit-content;
+}
+
+
+/*----- 🖐  #reg-form-container ------*/
+
+#reg-form-container {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border: 2px solid blue;
+    padding: 29px;
+    background-image: linear-gradient(to right, #e91717, #e76464, #abacc6);
+    font-size: 25px;
+    color: gainsboro;
+}
+
+#reg-form input {
+    margin-bottom: 10px;
+    border: 0;
+    outline: none;
+    padding: 2px;
+}
+
+#reg-form input[type="email"],
+#reg-form input[type="password"],
+#reg-form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+}
+
+#reg-form input[type="submit"] {
+    color: gainsboro;
+    background-color: #725353;
+}
+
+#reg-form input[type="submit"]:hover {
+    animation: rollOverY 2s linear 0s 1 forwards;
+}
+
+
+/*-- 🖖 #closeRegForm-btn ---*/
+
+#closeRegForm-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#closeRegForm-btn a {
+    color: #1c1c1c;
+}
+
+#closeRegForm-btn a:hover {
+    color: blue;
 }
 
 

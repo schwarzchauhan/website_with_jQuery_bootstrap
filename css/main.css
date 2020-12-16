@@ -22,6 +22,9 @@ li {
     list-style-type: none;
 }
 
+
+/*------------------------------------- miscelannous classes  -------------------------------------------------------------*/
+
 .sticky {
     position: fixed;
     top: 0;
@@ -35,8 +38,8 @@ li {
 /*---------------------------------- animated heartbeat ----------------------------------------*/
 
 .computer {
-    animation: heartBeat 1.2s linear infinite;
-    -webkit-animation: heartBeat 1s linear infinite alternate-reverse;
+    animation: heartBeat 1s linear infinite;
+    -webkit-animation: heartBeat 1s linear infinite;
 }
 
 .computer::before {
@@ -49,16 +52,16 @@ li {
         transform: scale(1.2);
     }
     33% {
-        -webkit-transform: scale(1.4);
-        transform: scale(1.4);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
     }
     66% {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
     100% {
-        -webkit-transform: scale(1.4);
-        transform: scale(1.4);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
     }
 }
 
@@ -78,5 +81,17 @@ li {
     100% {
         -webkit-transform: scale(1.4);
         transform: scale(1.4);
+    }
+}
+
+
+/*---------------------- rollOverY axis -------------------------*/
+
+@keyframes rollOverY {
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
     }
 }
