@@ -1,3 +1,5 @@
+/*** nesting style 🖐 ✋ 🖖 🤘 🤞 🖕 👆 ☝  ****/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -35,7 +37,10 @@ li {
 }
 
 
-/*---------------------------------- animated heartbeat ----------------------------------------*/
+/*-- 🖐 animations   ----*/
+
+
+/*-- ✋ heartbeat --*/
 
 .computer {
     animation: heartBeat 1s linear infinite;
@@ -85,7 +90,7 @@ li {
 }
 
 
-/*---------------------- rollOverY axis -------------------------*/
+/*-- ✋ rollOverY  ----*/
 
 @keyframes rollOverY {
     50% {
@@ -93,5 +98,35 @@ li {
     }
     100% {
         transform: rotateY(360deg);
+    }
+}
+
+
+/*-- ✋ growUp --*/
+
+@keyframes growUp {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@-webkit-keyframes growUp {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@-moz-keyframes growUp {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
     }
 }

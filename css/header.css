@@ -1,6 +1,3 @@
-/*** nesting style 🖐 ✋ 🖖 🤞 🖕 ☝ ****/
-
-
 /*-- 🖐 header -------------*/
 
 header {
@@ -54,13 +51,13 @@ header {
 /*--- .navigation-container 🖖 ---*/
 
 .navigation-container {
-    /*vvvip*/
+    /*vvvip 🧠 */
     flex-basis: 100%;
     border: 2px solid darkslategrey;
 }
 
 
-/*--- .navigation 🤞 -------*/
+/*--- .navigation 🤘 -------*/
 
 .navigation {
     display: flex;
@@ -69,7 +66,7 @@ header {
 }
 
 
-/*--- .top-bar 🖕 --------*/
+/*---- .top-bar 🤞 ----*/
 
 .top-bar {
     border: 2px solid orange;
@@ -79,8 +76,14 @@ header {
     float: right;
 }
 
+#reg-link {
+    text-decoration: none;
+}
 
-/*----- .nav-bar 🖕 -------*/
+a[id='reg-link']:visited {}
+
+
+/*---- 🤞 .nav-bar ----*/
 
 .nav-bar {
     border: 2px solid blue;
@@ -88,7 +91,7 @@ header {
 }
 
 
-/*-- .dropdown ☝ --------*/
+/*--- 🖕 .dropdown -----*/
 
 li.dropdown {
     position: relative;
@@ -97,7 +100,7 @@ li.dropdown {
 }
 
 
-/*--- .dropdown-btn ----*/
+/*-- 👆 .dropdown-btn --*/
 
 li.dropdown .dropdown-btn {
     outline: 0;
@@ -106,35 +109,15 @@ li.dropdown .dropdown-btn {
     color: coral;
     font-size: 20px;
     padding: 5px;
-    transition: transform 1s linear 0s;
 }
 
 li.dropdown .dropdown-btn:hover {
     outline: 0;
-    transform: scale(1.5, 1.5);
+    animation: growUp 1s linear 0s 1 forwards;
 }
 
 
-/*--- .dropdown-content a ----*/
-
-li.dropdown .dropdown-content a {
-    display: block;
-    padding: 5px;
-    font-weight: bold;
-}
-
-li.dropdown .dropdown-content a::before {
-    content: '👉';
-}
-
-li.dropdown .dropdown-content a:hover {
-    color: blueviolet;
-    text-decoration: none;
-    background-color: rgb(142, 142, 142, 0.3);
-}
-
-
-/*------ .dropdown-content -----*/
+/*-- 👆 .dropdown-content --*/
 
 li.dropdown .dropdown-content {
     display: none;
@@ -163,6 +146,25 @@ li.dropdown:hover .dropdown-content.wide {
 
 li.dropdown:hover .dropdown-content.short {
     max-height: fit-content;
+}
+
+
+/*-- ☝ .dropdown-content a ----*/
+
+li.dropdown .dropdown-content a {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+li.dropdown .dropdown-content a::before {
+    content: '👉';
+}
+
+li.dropdown .dropdown-content a:hover {
+    color: blueviolet;
+    text-decoration: none;
+    background-color: rgb(142, 142, 142, 0.3);
 }
 
 
@@ -207,7 +209,7 @@ li.dropdown:hover .dropdown-content.short {
 }
 
 
-/*-- 🖖 #closeRegForm-btn ---*/
+/*-- ✋ #closeRegForm-btn ---*/
 
 #closeRegForm-btn {
     position: absolute;
