@@ -1,4 +1,4 @@
-/*-- 🖐 header -------------*/
+/* 🖐 */
 
 header {
     height: 100%;
@@ -6,21 +6,20 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 
-/*---- ✋ .indian-map --------*/
+/* ✋ */
 
 .indian-map {
     font-size: 5px;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: blue;
 }
 
 
-/*----- ✋ .top-header -------*/
+/* ✋ */
 
 .top-header {
     width: 80%;
@@ -168,7 +167,7 @@ li.dropdown .dropdown-content a:hover {
 }
 
 
-/*----- 🖐  #reg-form-container ------*/
+/* 🖐 */
 
 #reg-form-container {
     display: none;
@@ -178,7 +177,8 @@ li.dropdown .dropdown-content a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    border: 2px solid blue;
+    max-width: 40%;
+    border: 2px dashed blue;
     padding: 29px;
     background-image: linear-gradient(to right, #e91717, #e76464, #abacc6);
     font-size: 25px;
@@ -209,7 +209,7 @@ li.dropdown .dropdown-content a:hover {
 }
 
 
-/*-- ✋ #closeRegForm-btn ---*/
+/* ✋ */
 
 #closeRegForm-btn {
     position: absolute;
@@ -256,5 +256,10 @@ li.dropdown .dropdown-content a:hover {
 @media screen and (max-width:768px) {
     .top-header {
         width: 100%;
+    }
+    /*🖐*/
+    #reg-form-container {
+        width: 90%;
+        max-width: 90%;
     }
 }

@@ -37,10 +37,36 @@ li {
 }
 
 
-/*-- 🖐 animations   ----*/
+/* 🖐 animations   */
 
 
-/*-- ✋ heartbeat --*/
+/* ✋ */
+
+.eye {
+    position: absolute;
+    animation: openNblink 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes openNblink {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(720deg);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    75% {
+        transform: translateX(80%);
+    }
+    100% {
+        transform: translateX(80%) scale(1.7, 1.5);
+    }
+}
+
+
+/* ✋ */
 
 .computer {
     animation: heartBeat 1s linear infinite;
@@ -90,7 +116,7 @@ li {
 }
 
 
-/*-- ✋ rollOverY  ----*/
+/* ✋ */
 
 @keyframes rollOverY {
     50% {
@@ -102,7 +128,7 @@ li {
 }
 
 
-/*-- ✋ growUp --*/
+/* ✋ */
 
 @keyframes growUp {
     from {

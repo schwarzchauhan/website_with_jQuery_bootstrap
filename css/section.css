@@ -35,7 +35,7 @@
 }
 
 
-/*----------------------------------- section -------------------------------------------*/
+/*🖐*/
 
 section {
     margin: auto;
@@ -44,7 +44,7 @@ section {
 }
 
 
-/*------------------------ .team --------------------------------*/
+/* ✋ */
 
 .team {
     background-color: #f2eee5;
@@ -54,7 +54,7 @@ section {
 }
 
 
-/*------------- #team-member .owl-item ------------------*/
+/* 🖖 */
 
 #team-member .owl-item {
     box-shadow: 3px 3px 10px #1c1c1c;
@@ -77,6 +77,32 @@ section {
 #team-member img {
     height: 250px;
     width: 100%;
+}
+
+
+/* ✋ */
+
+.story {
+    padding: 10px;
+    text-align: center;
+    border: 3px dotted yellow;
+    text-shadow: 1px 1px 6px coral;
+}
+
+.story .memes {
+    border: 3px inset salmon;
+    text-align: justify;
+}
+
+.story .memes::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.story .memes img {
+    float: right;
+    border: 2px dashed blue;
 }
 
 
